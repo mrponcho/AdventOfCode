@@ -22,9 +22,6 @@ internal class BinaryDiagnosticTest {
 
     @Test
     fun testPowerConsumption() {
-        val pair = calcGammaEpsilon(input)
-        assert(pair.first == 22)
-        assert(pair.second == 9)
         assert(getSubmarinePowerConsumption(input) == 198)
     }
 

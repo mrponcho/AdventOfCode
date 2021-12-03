@@ -20,6 +20,9 @@ internal class BinaryDiagnosticTest {
         "01010",
     )
 
+    private val testData =
+        File("src/test/resources/day3/binaryDiagnostics.txt").useLines { it.toList() }
+
     @Test
     fun testPowerConsumption() {
         assert(getSubmarinePowerConsumption(input) == 198)
@@ -27,7 +30,6 @@ internal class BinaryDiagnosticTest {
 
     @Test
     fun getPowerConsumptionOutput() {
-        val testData = File("src/test/resources/day3/binaryDiagnostics.txt").useLines { it.toList() }
         println(getSubmarinePowerConsumption(testData))
     }
 
@@ -38,7 +40,6 @@ internal class BinaryDiagnosticTest {
 
     @Test
     fun getLifeSupportRating() {
-        val testData = File("src/test/resources/day3/binaryDiagnostics.txt").useLines { it.toList() }
         println(getLifeSupportRating(testData))
     }
 }
